@@ -4,12 +4,88 @@
     padding: 0;
 }
 
+:root {
+    --preto: #000;
+    --branco: #FFF;
+    --cinza: rgb(235,235,235);
+}
+
 html {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background-color: var(--cinza);
 }
 
 header {
-    background-color: #000;
-    color: #FFF;
+    background-color: var(--preto);
+    color: var(--branco);
     padding: 1em;
+    position: fixed;
+    width: 100%;
+   
+}
+
+main {
+    background-color: var(--branco);
+    padding: 1%;
+    margin: auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+/* Configurações de imagem */
+
+img {
+    width: 100%;
+    padding-top: 1%;
+}
+
+/* Configurações de parágrafos */
+p {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+/*Configurações de parágrafos para mobile*/
+@media(min-width: 340px) and (max-width: 1024px) {
+    p {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+/* Divs */
+.separador {
+    margin-top: 6%;
+}
+
+@media(min-width: 340px) and (max-width: 1024px) {
+    .separador {
+        margin-top: 15%;
+    } 
 }
